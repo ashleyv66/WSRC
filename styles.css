@@ -1,0 +1,235 @@
+
+/* General Styles*/
+
+html {
+    font-family:'Poppins', sans-serif;
+}
+
+body {
+    margin:0;
+}
+
+h1,
+h2,
+h3 {
+    color:#002980;
+    
+
+}
+h1 {
+    font-size: 4em;
+    text-align: center;
+}
+
+h2 {
+    padding-left:2rem ;
+}
+h3 {
+    font-size:3em;
+    font-style:italic;
+    padding-left: 0;
+    text-align:center;
+}
+
+li a {
+    text-decoration: none;
+    color:white;
+
+}
+
+/*header styles*/
+
+header div {
+    display:flex;
+    justify-content:space-between;
+    background-color: #AAC3FA;
+    padding:1rem;
+    max-height:10rem;
+    margin:0;
+}
+
+.subaru {
+    max-width: 15%;
+    object-fit:cover;
+}
+
+.flag {/*border: dotted 1px red;*/
+    max-width: 15%;
+    object-fit:contain;
+    margin-right: 1rem;
+}
+
+@media only screen and (max-width:930px) {
+    h3 {
+        font-size:2rem;  
+    }
+}
+    @media only screen and (max-width:760px) {
+    h2 {
+        font-size:1.5rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .subaru {
+       display:none;
+    }
+    h1 {
+        font-size:2rem;
+    }
+}
+/* Nav styles*/
+
+header nav {
+    background-color: #B6B8BD;
+    
+}
+
+header ul {
+    text-align: center;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+nav li {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #0050FC;
+    border-radius: 5px;
+    width:7rem;
+}
+
+/* Banner Styles */
+
+#banner {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    height:20rem;
+    background-image: url('./images/blurredcorner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}   
+
+
+#banner .title-box {
+    max-width:80%;
+
+}
+#banner h1 {
+   
+}
+
+/*Intro Styles*/
+
+#intro {
+    color:white;
+    font-size: 1.5rem;
+    background-color: #0038B0;
+    padding: 1rem 3rem;
+}
+
+/*Club Photo Styles*/
+
+.club-photos {
+    background-color: #B6B8BD;
+    display:flex;
+    width:100%;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+.club-photos img {
+    max-width:28%;
+    padding:1%;
+    object-fit:cover
+}
+
+/* Info Styles*/
+
+.activities .info {
+    height:fit-content;
+    background-color:#AAC3FA;
+    display:flex;
+    justify-content: flex-start;
+}
+
+.info h2 {
+    padding-top:0.5rem;
+    Padding-bottom:0.5rem;
+}
+
+.info span {
+    font-weight:bold;
+}
+
+/*Gallery styles*/
+
+
+/*Other Activities Styles*/
+
+.info p {
+    margin:1rem;
+    padding: 1rem 1rem 1rem 2rem;
+    
+}
+
+.others {
+    height:fit-content;
+    background-color:#AAC3FA;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+}
+
+.others p {
+    margin:1.5rem 1rem;
+}
+
+/*Gallery Styles*/
+
+.gallery .pics {
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    width: 100%;
+}
+.gallery h2 {
+    text-align:center;
+    padding-left:0;
+}
+
+.pics img {
+    max-width:30%;
+    object-fit:cover;
+}
+
+@media only screen and (max-width:600px) {
+    .others p {
+        font-size:0.8rem;
+    }
+    .gallery .pics {
+        flex-direction: column;
+        align-items:center;
+    
+    }
+    }
+    .others {
+        flex-direction:column;
+        align-items: center;
+    }
+    .others h2 {
+        padding-left:0;
+    }
+
+    .others p {
+        margin:0.5rem 1rem;
+    }
